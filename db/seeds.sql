@@ -1,4 +1,4 @@
-INSERT INTO candidates (first_name, last_name, industry_connected)
+INSERT INTO candidates2 (first_name, last_name, industry_connected)
 VALUES
   ('Edward', 'Kubiak', 1),
   ('Virginia', 'Woolf', 1),

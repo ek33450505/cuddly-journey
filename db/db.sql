@@ -1,2 +1,3 @@
-CREATE DATABASE election;
-USE election;
+DROP DATABASE IF EXISTS election3;
+CREATE DATABASE election3;
+USE election3;
