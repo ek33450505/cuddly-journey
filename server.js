@@ -29,9 +29,39 @@ const db = mysql.createConnection(
 //     });
 // });
 
-db.query(`SELECT * FROM candidates2`, (err, rows) => {
-    console.log(rows);
-});
+// Show all candidates 
+// db.query(`SELECT * FROM candidates2`, (err, rows) => {
+//     console.log(rows);
+// });
+
+// GET a single candidate
+// db.query(`SELECT * FROM candidates2 WHERE id = 1`, (err, row) => {
+//     if (err) {
+//         console.log(err);
+//     }
+//     console.log(row);
+// });
+
+// Delete a candidate
+// db.query(`DELETE FROM candidates2 WHERE id = ?`, 10, (err, results) => {
+//     if (err) {
+//     console.log(err);
+//     }
+//     console.log(results)
+// });
+
+// Create a candidate
+// const sql = `INSERT INTO candidates2 (id, first_name, last_name, industry_connected) 
+//               VALUES (?,?,?,?)`;
+
+// const params = [10, 'Unica', 'Zurn', 1];
+
+// db.query(sql, params, (err, results) => {
+//     if (err) {
+//         console.log(err)
+//     }
+//     console.log(results)
+// });
 
 // Default response for any other request (Not Found)
 app.use((req, res) => {
